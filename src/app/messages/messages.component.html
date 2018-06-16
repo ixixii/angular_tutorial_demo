@@ -1,0 +1,15 @@
+<!-- 当MessageService 中的 messages数组 有数据的时候,才 -->
+
+	<hr/>
+	<h4 style="color:#555">Powered by Beyond</h4>
+<div *ngIf="messageService.messages.length === -1">
+	<button class="class_btn_clear"
+			(click)="messageService.clear()">
+			清空消息
+	</button>
+
+	<div *ngFor="let message of messageService.messages"
+		 style="color:#999;font-size:12px;">
+		{{ message }}
+	</div>
+</div>

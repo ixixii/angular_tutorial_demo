@@ -1,0 +1,98 @@
+.class_ul_girls {
+  /*background-color: #369;*/
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+.class_ul_girls li {
+  cursor: pointer;
+  /* 为子元素准备的 */
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.class_ul_girls .text {
+  position: relative;
+  top: -3px;
+}
+
+.class_ul_girls .class_span_badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  /* ... */
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.class_ul_girls li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+
+
+/* 点击时选中后的 高亮效果 */
+.class_li_selected {
+  background-color: #CFD8DC !important;
+  color: rgb(153,57,60);
+}
+
+.class_ul_girls li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: rgb(153,57,60);
+}
+
+
+/* ========= */
+
+.class_ul_girls a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.class_ul_girls a:hover {
+  color:#607D8B;
+}
+
+
+
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -32px;
+  background-color: gray !important;
+  color: white;
+}

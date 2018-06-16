@@ -1,0 +1,16 @@
+<hr/>
+<h3>Top Girls</h3>
+<div class="class_div_grid class_div_grid-pad">
+	<a *ngFor="let girl of girls" class="col-1-4"
+		routerLink="/detail/{{girl.id}}">
+		<div class="class_div_module girl" style="width:100px;height:95px;border-radius:100px;">
+			<h2 style="margin-top:10px;">{{girl.name}}</h2>
+		</div>
+	</a>
+</div>
+
+<div style="clear: both;">
+</div>
+<hr/>
+
+<app-girl-search></app-girl-search>

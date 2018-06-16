@@ -1,0 +1,21 @@
+<div *ngIf="girl !== undefined">
+  <h2>{{girl.name | uppercase}} 介绍</h2>
+  <div>
+    <span>id: </span> {{girl.id}}
+  </div>
+  <div>
+    <span>姓名: </span> {{girl.name}}
+  </div>
+  <div>
+    <span>芳龄: </span> {{girl.age}}
+  </div>
+  <div>
+    <label>
+      name:
+      <input [(ngModel)]="girl.name" placeholder="name"  (keyup.enter)="save()"/>
+    </label>
+  </div>
+
+  <button class="class_btn class_btn_green " (click)="goBack()">返回</button>
+  <button class="class_btn class_btn_green " (click)="save()">保存</button>
+</div>

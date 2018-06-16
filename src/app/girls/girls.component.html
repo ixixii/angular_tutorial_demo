@@ -1,0 +1,26 @@
+<hr/>
+<div>
+  <label>芳名:
+    <input (keyup.enter)="add(girlName.value);girlName.value=''" #girlName>
+  </label>
+
+  <button (click)="add(girlName.value);girlName.value=''" >加入后宫</button>
+
+</div>
+
+<ul class="class_ul_girls">
+  <!-- (click)="onSelectFunction(girl)"
+  		[class.class_li_selected]="girl === selectedGirl"  -->
+  <li *ngFor="let girl of girls">
+    <a routerLink="/detail/{{girl.id}}">
+	    <span class="class_span_badge">
+			{{girl.id}}
+		</span> {{girl.name}}, {{girl.age}}岁
+	</a>
+
+    <button class="delete" title="delete girl"
+            (click)="delete(girl)">
+      x
+    </button>
+  </li>
+</ul>
